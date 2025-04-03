@@ -1,0 +1,203 @@
+/* Responsive Styles for Sky Wings Website
+-------------------------------------------------- */
+
+/* Large Devices (Desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+  
+  /* Add more space in desktop view */
+  .navbar {
+    padding: 20px 0;
+  }
+  
+  /* Enhance hover effects on desktop */
+  .single-package-item:hover {
+    transform: translateY(-15px);
+  }
+}
+
+/* Medium Devices (Tablets, 768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+  
+  /* Adjust hero section for tablets */
+  .about-us-txt h2 {
+    font-size: 2.8rem;
+  }
+  
+  /* Adjust package items for tablets */
+  .single-package-item-txt h3 {
+    font-size: 1.2rem;
+  }
+  
+  /* Make sure service boxes are aligned properly */
+  .service-counter {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .service-counter > div {
+    margin-bottom: 30px;
+  }
+}
+
+/* Small Devices (Landscape Phones, 576px to 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .container {
+    max-width: 540px;
+  }
+  
+  /* Stack the navigation on small devices */
+  .navbar-nav {
+    padding-top: 15px;
+  }
+  
+  /* Fix travel box for small devices */
+  .travel-box {
+    padding: 20px 0;
+  }
+  
+  /* Reduce padding on sections for small screens */
+  section {
+    padding: 50px 0;
+  }
+  
+  /* Center align section titles */
+  .gallary-header h2, 
+  .gallery-header h2 {
+    font-size: 2rem;
+  }
+  
+  /* Make special offer more compact */
+  .special-offer-content {
+    padding: 30px 0;
+  }
+  
+  .single-special-offer-txt h2 {
+    font-size: 2rem;
+  }
+}
+
+/* Extra Small Devices (Portrait Phones, less than 576px) */
+@media (max-width: 575px) {
+  /* Tighten up spacing */
+  section {
+    padding: 40px 0;
+  }
+  
+  /* Make hero text readable on small screens */
+  .about-us-txt h2 {
+    font-size: 1.8rem;
+  }
+  
+  /* Improve form layout on small screens */
+  .single-tab-select-box {
+    margin-bottom: 20px;
+  }
+  
+  /* Adjust package displays */
+  .single-package-item {
+    margin-bottom: 25px;
+  }
+  
+  .single-package-item-txt {
+    padding: 15px;
+  }
+  
+  .single-package-item-txt h3 {
+    font-size: 1.1rem;
+  }
+  
+  /* Fix footer on small screens */
+  .footer-content {
+    text-align: center;
+  }
+  
+  .single-footer-item h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Form styling for mobile */
+  .travel-check-icon, 
+  .travel-select-icon {
+    width: 100%;
+  }
+  
+  /* Fix buttons on small screens */
+  .about-view {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+  
+  /* Improve navigation on mobile */
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  
+  .navbar-toggler {
+    padding: 0.4rem 0.8rem;
+    font-size: 1rem;
+  }
+}
+
+/* Contact Form Responsive Styles
+-------------------------------------------------- */
+@media (max-width: 767px) {
+  .contact-form {
+    padding: 20px 15px;
+  }
+  
+  .contact-form h2 {
+    font-size: 1.5rem;
+  }
+  
+  .contact-form .form-label {
+    font-size: 0.9rem;
+  }
+  
+  .contact-form .form-control {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+  
+  .contact-form button[type="submit"] {
+    font-size: 0.9rem;
+  }
+}
+
+/* Fix spacing issues on small screens */
+@media (max-width: 575px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .row {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  
+  [class*="col-"] {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  /* Make footer more compact on mobile */
+  .footer-copyright {
+    padding: 30px 0 10px;
+  }
+  
+  .single-footer-item {
+    margin-bottom: 20px;
+  }
+  
+  .single-footer-item h2 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+} 
