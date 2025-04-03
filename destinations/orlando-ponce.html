@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orlando to Ponce - SkyWings</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/destination.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        #destination-header {
+            background-image: linear-gradient(var(--dark-overlay), var(--dark-overlay)), url('../images/orlando-ponce.jpg');
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <span class="logo-text">Sky<span class="text-accent">Wings</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../index.html#destinations">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#why-choose-us">Why Choose Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Destination Header -->
+    <header id="destination-header" class="d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold">Orlando to Ponce</h1>
+                    <p class="lead mb-4">From Florida's theme park capital to Puerto Rico's historic Pearl of the South</p>
+                    <div class="price-badge">From US$102.06</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Booking Section -->
+    <section id="booking" class="py-5">
+        <div class="container">
+            <div class="booking-container">
+                <h2 class="text-center mb-4">Book Your Flight</h2>
+                <form class="row g-3">
+                    <div class="col-md-3">
+                        <label for="departure" class="form-label">From</label>
+                        <input type="text" class="form-control" id="departure" value="Orlando" readonly>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="destination" class="form-label">To</label>
+                        <input type="text" class="form-control" id="destination" value="Ponce" readonly>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="departure-date" class="form-label">Departure</label>
+                        <input type="date" class="form-control" id="departure-date" required>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="return-date" class="form-label">Return</label>
+                        <input type="date" class="form-control" id="return-date">
+                    </div>
+                    <div class="col-md-2 d-flex align-items-end">
+                        <button type="submit" class="btn btn-primary w-100">Book Now</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flight Details Section -->
+    <section id="flight-details" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Flight Details</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="flight-info-card">
+                        <div class="airline-info d-flex align-items-center mb-4">
+                            <div class="airline-logo me-3">F</div>
+                            <div class="airline-name">Frontier Airlines</div>
+                        </div>
+                        <div class="flight-route mb-4">
+                            <div class="row align-items-center">
+                                <div class="col-md-5 text-center text-md-start">
+                                    <div class="airport-code">MCO</div>
+                                    <div class="airport-name">Orlando International Airport</div>
+                                    <div class="time">9:00 AM</div>
+                                </div>
+                                <div class="col-md-2 text-center">
+                                    <div class="flight-duration">
+                                        <div class="duration-line">
+                                            <i class="fas fa-plane"></i>
+                                        </div>
+                                        <div class="duration-time">2h 45m</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 text-center text-md-end">
+                                    <div class="airport-code">PSE</div>
+                                    <div class="airport-name">Mercedita International Airport</div>
+                                    <div class="time">11:45 AM</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flight-details">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="detail-item">
+                                        <div class="detail-label">Flight Number</div>
+                                        <div class="detail-value">F9 1234</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="detail-item">
+                                        <div class="detail-label">Aircraft</div>
+                                        <div class="detail-value">Airbus A320</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="detail-item">
+                                        <div class="detail-label">Class</div>
+                                        <div class="detail-value">Economy</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destination Information -->
+    <section id="destination-info" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">About Your Destination</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3>Ponce - The Pearl of the South</h3>
+                    <p>Ponce, Puerto Rico's second-largest city, is known for its rich history, stunning colonial architecture, and vibrant cultural scene. Founded in 1692, the city offers visitors a unique blend of historical charm and modern amenities.</p>
+                    <p>The city's historic district features some of the best-preserved Spanish colonial architecture in the Caribbean, including the iconic red and black Parque de Bombas. Ponce is also home to numerous museums, art galleries, and cultural institutions.</p>
+                    <div class="highlight-list mt-4">
+                        <h4>Top Attractions</h4>
+                        <ul>
+                            <li><i class="fas fa-check-circle me-2"></i>Plaza Las Delicias</li>
+                            <li><i class="fas fa-check-circle me-2"></i>Museo de Arte de Ponce</li>
+                            <li><i class="fas fa-check-circle me-2"></i>Parque de Bombas</li>
+                            <li><i class="fas fa-check-circle me-2"></i>Castillo Serrallés</li>
+                            <li><i class="fas fa-check-circle me-2"></i>La Guancha Boardwalk</li>
+                        </ul>
+                    </div>
+                    <div class="highlight-list mt-4">
+                        <h4>Best Time to Visit</h4>
+                        <p>The best time to visit Ponce is from December to April when the weather is dry and temperatures are pleasant. This period also coincides with several cultural festivals and events, including the Ponce Carnival in February.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="destination-gallery">
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <img src="../images/ponce-1.jpg" alt="Plaza Las Delicias" class="img-fluid rounded">
+                            </div>
+                            <div class="col-6">
+                                <img src="../images/ponce-2.jpg" alt="Parque de Bombas" class="img-fluid rounded">
+                            </div>
+                            <div class="col-12">
+                                <img src="../images/ponce-3.jpg" alt="La Guancha Boardwalk" class="img-fluid rounded">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel Tips -->
+    <section id="travel-tips" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Travel Tips</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="tip-card">
+                        <div class="tip-icon mb-3">
+                            <i class="fas fa-suitcase"></i>
+                        </div>
+                        <h4>Packing Essentials</h4>
+                        <ul class="tip-list">
+                            <li>Light, breathable clothing</li>
+                            <li>Sun protection essentials</li>
+                            <li>Comfortable walking shoes</li>
+                            <li>Swimming gear</li>
+                            <li>Rain jacket (just in case)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="tip-card">
+                        <div class="tip-icon mb-3">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <h4>Getting Around</h4>
+                        <ul class="tip-list">
+                            <li>Use local taxis</li>
+                            <li>Rent a car for flexibility</li>
+                            <li>Try the trolley service</li>
+                            <li>Walking tours available</li>
+                            <li>Public buses for local travel</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="tip-card">
+                        <div class="tip-icon mb-3">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h4>Food & Dining</h4>
+                        <ul class="tip-list">
+                            <li>Try local mofongo</li>
+                            <li>Visit Plaza del Mercado</li>
+                            <li>Sample local coffee</li>
+                            <li>Seafood at La Guancha</li>
+                            <li>Local food festivals</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Destinations -->
+    <section id="related-destinations" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">You Might Also Like</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="destination-card">
+                        <div class="destination-img">
+                            <img src="../images/las-vegas-san-diego.jpg" alt="Las Vegas - San Diego" class="img-fluid">
+                            <div class="airline-logo">F</div>
+                        </div>
+                        <div class="destination-info">
+                            <h5>Las Vegas - San Diego</h5>
+                            <p class="price">From US$48.06</p>
+                            <a href="las-vegas-san-diego.html" class="btn btn-sm btn-outline-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="destination-card">
+                        <div class="destination-img">
+                            <img src="../images/fort-lauderdale-atlanta.jpg" alt="Fort Lauderdale - Atlanta" class="img-fluid">
+                            <div class="airline-logo">S</div>
+                        </div>
+                        <div class="destination-info">
+                            <h5>Fort Lauderdale - Atlanta</h5>
+                            <p class="price">From US$56.18</p>
+                            <a href="fort-lauderdale-atlanta.html" class="btn btn-sm btn-outline-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="destination-card">
+                        <div class="destination-img">
+                            <img src="../images/abbotsford-edmonton.jpg" alt="Abbotsford - Edmonton" class="img-fluid">
+                            <div class="airline-logo">F</div>
+                        </div>
+                        <div class="destination-info">
+                            <h5>Abbotsford - Edmonton</h5>
+                            <p class="price">From US$93.74</p>
+                            <a href="abbotsford-edmonton.html" class="btn btn-sm btn-outline-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="cta" class="py-5 text-center">
+        <div class="container">
+            <div class="cta-container">
+                <h2>Ready to Book Your Trip?</h2>
+                <p class="mb-4">Take advantage of our special rates and start your journey today!</p>
+                <a href="#booking" class="btn btn-primary btn-lg">Book Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-about">
+                        <h5 class="footer-heading">About SkyWings</h5>
+                        <p>SkyWings is a leading travel agency in the USA, specializing in affordable flights, hotels, and vacation packages. We make travel planning simple, convenient, and budget-friendly.</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h5 class="footer-heading">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#destinations">Destinations</a></li>
+                        <li><a href="../index.html#services">Services</a></li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h5 class="footer-heading">Travel Info</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Travel Insurance</a></li>
+                        <li><a href="#">Travel Guides</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Travel Tips</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="footer-heading">Newsletter</h5>
+                    <p>Subscribe to our newsletter for exclusive deals and travel tips.</p>
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="mt-4 mb-3">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="copyright mb-0">&copy; 2023 SkyWings. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms & Conditions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html> 

@@ -1,1001 +1,450 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<!-- META DATA -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Sky Wings - Your Premium Travel Experience">
-	<meta name="theme-color" content="#3498db">
-	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
-	<!-- Modern Fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
-		rel="stylesheet">
-
-	<!-- TITLE OF SITE -->
-	<title>Sky Wings - Premium Travel Experience</title>
-
-	<!-- favicon img -->
-	<link rel="icon" type="image/png" href="assets/logo/favicon.png" />
-
-	<!-- Preloader CSS (loaded first to ensure preloader shows immediately) -->
-	<link rel="stylesheet" href="assets/css/preloader.css">
-
-	<!-- Modern CSS Libraries -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-
-	<!--animate.css-->
-	<link rel="stylesheet" href="assets/css/animate.css" />
-
-	<!--hover.css-->
-	<link rel="stylesheet" href="assets/css/hover-min.css">
-
-	<!--datepicker.css-->
-	<link rel="stylesheet" href="assets/css/datepicker.css">
-
-	<!--owl.carousel.css-->
-	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-	<link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
-
-	<!-- range css-->
-	<link rel="stylesheet" href="assets/css/jquery-ui.min.css" />
-
-	<!--bootstrap.min.css-->
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-
-	<!-- bootsnav -->
-	<link rel="stylesheet" href="assets/css/bootsnav.css" />
-
-	<!--style.css-->
-	<link rel="stylesheet" href="assets/css/style.css" />
-
-	<!--responsive.css-->
-	<link rel="stylesheet" href="assets/css/responsive.css" />
-
-	<!-- Bootstrap CSS -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-
-	<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-		<![endif]-->
-
-	<!-- jQuery loaded early to ensure it's available -->
-	<script src="assets/js/jquery.js"></script>
-
-	<!-- Preloader JS - Load this first to ensure the preloader disappears -->
-	<script src="assets/js/preloader.js"></script>
-
-	<!-- Preloader fallback script -->
-	<script>
-		// Ensure preloader is hidden even if other scripts fail to load
-		window.addEventListener('DOMContentLoaded', function () {
-			setTimeout(function () {
-				var preloader = document.querySelector('.preloader');
-				if (preloader) {
-					preloader.classList.add('preloader-hide');
-					setTimeout(function () {
-						preloader.style.display = 'none';
-					}, 1000);
-				}
-			}, 2500);
-		});
-	</script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyWings - Your Gateway to Affordable Travel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-	<!--[if lte IE 9]>
-		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
-			your browser</a> to improve your experience and security.</p>
-		<![endif]-->
-
-	<!-- Preloader -->
-	<div class="preloader">
-		<div class="loader">
-			<div
-				style="border: 4px solid #f3f3f3; border-top: 4px solid #3498db; border-radius: 50%; width: 50px; height: 50px; animation: spin 1s linear infinite;">
-			</div>
-		</div>
-	</div>
-
-	<style>
-		@keyframes spin {
-			0% {
-				transform: rotate(0deg);
-			}
-
-			100% {
-				transform: rotate(360deg);
-			}
-		}
-	</style>
-
-	<!-- Header -->
-	<header class="fixed-top bg-white shadow-sm">
-		<nav class="navbar navbar-expand-lg navbar-light">
-			<div class="container">
-				<a class="navbar-brand" href="index.html" data-aos="fade-right" data-aos-delay="100">
-					<img src="assets/logo/logo.png" alt="Sky Wings Logo" class="logo-img" style="max-width: 100px; height: auto;">
-				</a>
-
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav ms-auto">
-						<li class="nav-item" data-aos="fade-down" data-aos-delay="200">
-							<a class="nav-link" href="#home">Home</a>
-						</li>
-						<li class="nav-item" data-aos="fade-down" data-aos-delay="300">
-							<a class="nav-link" href="#gallery">About</a>
-						</li>
-						<li class="nav-item" data-aos="fade-down" data-aos-delay="400">
-							<a class="nav-link" href="#pack">Packages</a>
-						</li>
-						<li class="nav-item" data-aos="fade-down" data-aos-delay="500">
-							<a class="nav-link" href="#spo">Special Offers</a>
-						</li>
-						<li class="nav-item" data-aos="fade-down" data-aos-delay="600">
-							<a class="nav-link" href="#contact">Contact</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-	</header>
-
-	<!-- home start -->
-	<section id="home" class="about-us parallax">
-		<div class="container">
-			<div class="about-us-content">
-				<div class="row">
-					<div class="col-sm-12">
-						<div class="single-about-us" data-aos="fade-up" data-aos-delay="300">
-							<div class="about-us-txt">
-								<h2 class="animate__animated animate__fadeInDown">
-									Explore the Beauty of the Beautiful World
-								</h2>
-								<div class="about-btn animate__animated animate__fadeInUp animate__delay-1s">
-									<li class="smooth-menu"><a href="#pack"><button class="about-view">
-												explore now
-											</button></a></li>
-								</div><!--/.about-btn-->
-							</div><!--/.about-us-txt-->
-						</div><!--/.single-about-us-->
-					</div><!--/.col-->
-				</div><!--/.row-->
-			</div><!--/.about-us-content-->
-		</div><!--/.container-->
-	</section><!--/.about-us-->
-	<!--about-us end -->
-
-	<!--travel-box start-->
-	<section class="travel-box">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="single-travel-boxes" data-aos="fade-up" data-aos-delay="200">
-						<div id="desc-tabs" class="desc-tabs">
-							<ul class="nav nav-tabs" role="tablist">
-								<li role="presentation" class="active">
-									<a href="#tours" aria-controls="tours" role="tab" data-toggle="tab"
-										class="text-white text-decoration-none">
-										<i class="fa fa-tree"></i>
-										Tours
-									</a>
-								</li>
-							</ul>
-
-							<!-- Tab panes -->
-							<div class="tab-content bg-white p-4">
-								<div role="tabpanel" class="tab-pane active fade show" id="tours">
-									<div class="tab-para">
-										<form action="send_mail.php" method="post" class="row g-3">
-											<div class="row">
-												<div class="col-lg-6 col-md-6 col-sm-12">
-													<div class="single-tab-select-box" data-aos="fade-up"
-														data-aos-delay="100">
-														<h2 class="text-dark">Email</h2>
-														<div class="mb-3">
-															<input type="email" name="email" class="form-control"
-																placeholder="Enter your email address" required>
-														</div>
-													</div>
-												</div>
-
-												<div class="col-lg-6 col-md-6 col-sm-12">
-													<div class="single-tab-select-box" data-aos="fade-up"
-														data-aos-delay="200">
-														<h2 class="text-dark">Country</h2>
-														<div class="mb-3">
-															<input type="text" name="country" class="form-control"
-																placeholder="Enter your destination country" required>
-														</div>
-													</div>
-												</div>
-
-												<div class="col-lg-6 col-md-6 col-sm-12">
-													<div class="single-tab-select-box" data-aos="fade-up"
-														data-aos-delay="300">
-														<h2 class="text-dark">Destination</h2>
-														<div class="mb-3">
-															<input type="text" name="destination" class="form-control"
-																placeholder="Enter your destination location" required>
-														</div>
-													</div>
-												</div>
-											</div>
-
-											<div class="row">
-												<div class="col-lg-3 col-md-4 col-sm-6">
-													<div class="single-tab-select-box" data-aos="fade-up"
-														data-aos-delay="400">
-														<h2 class="text-dark">Check-in</h2>
-														<div class="travel-check-icon">
-															<input type="text" name="check_in" class="form-control"
-																data-toggle="datepicker"
-																placeholder="Select check-in date" required>
-														</div>
-													</div>
-												</div>
-
-												<div class="col-lg-3 col-md-4 col-sm-6">
-													<div class="single-tab-select-box" data-aos="fade-up"
-														data-aos-delay="500">
-														<h2 class="text-dark">Check-out</h2>
-														<div class="travel-check-icon">
-															<input type="text" name="check_out" class="form-control"
-																data-toggle="datepicker"
-																placeholder="Select check-out date" required>
-														</div>
-													</div>
-												</div>
-
-												<div class="col-lg-3 col-md-4 col-sm-6">
-													<div class="single-tab-select-box" data-aos="fade-up"
-														data-aos-delay="600">
-														<h2 class="text-dark">Duration</h2>
-														<div class="mb-3">
-															<input type="number" name="duration" class="form-control"
-																placeholder="Number of days" required>
-														</div>
-													</div>
-												</div>
-
-												<div class="col-lg-3 col-md-4 col-sm-6">
-													<div class="single-tab-select-box" data-aos="fade-up"
-														data-aos-delay="700">
-														<h2 class="text-dark">Members</h2>
-														<div class="mb-3">
-															<input type="number" name="members" class="form-control"
-																placeholder="Number of travelers" required>
-														</div>
-													</div>
-												</div>
-											</div>
-
-											<div class="row">
-												<div class="col-sm-7">
-													<div class="about-btn travel-mrt-0 pull-right" data-aos="fade-up"
-														data-aos-delay="800">
-														<button type="submit"
-															class="about-view travel-btn">Make Request</button>
-													</div>
-												</div>
-											</div>
-										</form>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--travel-box end-->
-
-	<!--service start-->
-	<section id="service" class="service">
-		<div class="container">
-			<div class="gallary-header text-center mb-5" data-aos="fade-up">
-				<h2>Our Services</h2>
-				<p>We provide high quality services to make your journey memorable</p>
-			</div>
-
-			<div class="row service-counter text-center">
-				<div class="col-md-4 col-sm-4 mb-4">
-					<div class="single-service-box" data-aos="fade-up" data-aos-delay="100">
-						<div class="service-img">
-							<img src="assets/images/service/s1.png" alt="amazing tour packages" />
-						</div><!--/.service-img-->
-						<div class="service-content">
-							<h2>
-								<a href="#">
-									amazing tour packages
-								</a>
-							</h2>
-							<p>Explore our handpicked and carefully curated tour packages to the most beautiful
-								destinations around the world.</p>
-						</div><!--/.service-content-->
-					</div><!--/.single-service-box-->
-				</div><!--/.col-->
-
-				<div class="col-md-4 col-sm-4 mb-4">
-					<div class="single-service-box" data-aos="fade-up" data-aos-delay="300">
-						<div class="service-img">
-							<img src="assets/images/service/s2.png" alt="book top class hotel" />
-						</div><!--/.service-img-->
-						<div class="service-content">
-							<h2>
-								<a href="#">
-									book top class hotel
-								</a>
-							</h2>
-							<p>Stay in luxury with our carefully selected premium hotels that provide comfort and
-								exceptional service.</p>
-						</div><!--/.service-content-->
-					</div><!--/.single-service-box-->
-				</div><!--/.col-->
-
-				<div class="col-md-4 col-sm-4 mb-4">
-					<div class="single-service-box" data-aos="fade-up" data-aos-delay="500">
-						<div class="statistics-img">
-							<img src="assets/images/service/s3.png" alt="online flight booking" />
-						</div><!--/.service-img-->
-						<div class="service-content">
-							<h2>
-								<a href="#">
-									online flight booking
-								</a>
-							</h2>
-							<p>Book your flights easily with our streamlined online booking system featuring competitive
-								rates.</p>
-						</div><!--/.service-content-->
-					</div><!--/.single-service-box-->
-				</div><!--/.col-->
-			</div><!--/.statistics-counter-->
-		</div><!--/.container-->
-	</section><!--/.service-->
-	<!--service end-->
-
-	<!--gallery start-->
-	<section id="gallery" class="gallery">
-		<div class="container">
-			<div class="gallery-details">
-				<div class="gallery-header text-center" data-aos="fade-up">
-					<h2>About Us</h2>
-					<p class="my-4">At Sky Wings, we are dedicated to making your travel dreams a reality. Founded with 
-						a passion for connecting people to incredible destinations, our mission is to provide seamless, 
-						efficient, and personalized travel experiences that create lifelong memories.</p>
-					<h3 class="mt-5" data-aos="fade-up" data-aos-delay="200">Who We Are</h3>
-					<p class="mb-5" data-aos="fade-up" data-aos-delay="300">Sky Wings is a premier online travel agency 
-						revolutionizing the way people explore the world. Our expert team combines industry expertise with 
-						cutting-edge technology to deliver unparalleled travel solutions. We pride ourselves on offering 
-						competitive rates, exclusive partnerships with leading airlines and hotels, and 24/7 dedicated 
-						customer support. From luxury getaways to adventure expeditions, we craft each journey with 
-						meticulous attention to detail.</p>
-				</div><!--/.gallery-header-->
-
-				<div class="gallery-box">
-					<div class="gallery-content">
-						<div class="filtr-container">
-							<div class="row g-4">
-								<div class="col-md-6" data-aos="zoom-in" data-aos-delay="100">
-									<div class="filtr-item position-relative overflow-hidden rounded">
-										<img src="assets/images/gallary/g1.jpg" alt="Sky Wings team" class="img-fluid w-100" />
-										<div class="item-title">
-											<a href="#">Our Global Network</a>
-										</div>
-									</div>
-								</div>
-
-								<div class="col-md-6" data-aos="zoom-in" data-aos-delay="200">
-									<div class="filtr-item position-relative overflow-hidden rounded">
-										<img src="assets/images/gallary/g2.jpg" alt="Our services" class="img-fluid w-100" />
-										<div class="item-title">
-											<a href="#">Premium Services</a>
-										</div>
-									</div>
-								</div>
-
-								<div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
-									<div class="filtr-item position-relative overflow-hidden rounded">
-										<img src="assets/images/gallary/g3.jpg" alt="Customer support" class="img-fluid w-100" />
-										<div class="item-title">
-											<a href="#">24/7 Support</a>
-										</div>
-									</div>
-								</div>
-
-								<div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">
-									<div class="filtr-item position-relative overflow-hidden rounded">
-										<img src="assets/images/gallary/g4.jpg" alt="Travel experience" class="img-fluid w-100" />
-										<div class="item-title">
-											<a href="#">Curated Experiences</a>
-										</div>
-									</div>
-								</div>
-
-								<div class="col-md-4" data-aos="zoom-in" data-aos-delay="500">
-									<div class="filtr-item position-relative overflow-hidden rounded">
-										<img src="assets/images/gallary/g5.jpg" alt="Exclusive deals" class="img-fluid w-100" />
-										<div class="item-title">
-											<a href="#">Special Offers</a>
-										</div>
-									</div>
-								</div>
-
-								<div class="col-md-8" data-aos="zoom-in" data-aos-delay="600">
-									<div class="filtr-item position-relative overflow-hidden rounded">
-										<img src="assets/images/gallary/g6.jpg" alt="Our team" class="img-fluid w-100" />
-										<div class="item-title">
-											<a href="#">Expert Team</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--gallery end-->
-
-
-	<!--packages start-->
-	<section id="pack" class="packages">
-		<div class="container">
-			<div class="gallary-header text-center" data-aos="fade-up">
-				<h2>Special Packages</h2>
-				<p>Discover our exclusive travel packages crafted for unforgettable experiences</p>
-			</div><!--/.gallery-header-->
-
-			<div class="packages-content">
-				<div class="row">
-					<div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
-						<div class="single-package-item">
-							<img src="assets/images/packages/p1.jpg" alt="Rajasthan Forts and Palaces Tour">
-							<div class="single-package-item-txt">
-								<h3>RAJASTHAN FORTS AND PALACES TOUR<span class="pull-right"></span></h3>
-								<div class="packages-para">
-									<p>
-										<span>
-											<i class="fa fa-angle-right"></i> 14 days 13 nights
-										</span>
-									</p>
-								</div><!--/.packages-para-->
-								<div class="packages-review">
-									<p>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<span>2544 reviews</span>
-									</p>
-								</div><!--/.packages-review-->
-								<div class="about-btn">
-									<a href="#contact"><button class="about-view packages-btn">
-											Book Now
-										</button></a>
-									<a href="rajasthan.html"><button class="about-view packages-btn">
-											Get Details
-										</button></a>
-								</div><!--/.about-btn-->
-							</div><!--/.single-package-item-txt-->
-						</div><!--/.single-package-item-->
-					</div><!--/.col-->
-
-					<div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="300">
-						<div class="single-package-item">
-							<img src="assets/images/packages/p2.jpg"
-								alt="Golden Triangle with Khajuraho and Varanasi Tour">
-							<div class="single-package-item-txt">
-								<h3>GOLDEN TRIANGLE WITH KHAJURAHO AND VARANASI TOUR
-									<span class="pull-right"></span>
-								</h3>
-								<div class="packages-para">
-									<p>
-										<span>
-											<i class="fa fa-angle-right"></i> 10 days 9 nights
-										</span>
-									</p>
-								</div><!--/.packages-para-->
-								<div class="packages-review">
-									<p>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<span>2032 reviews</span>
-									</p>
-								</div><!--/.packages-review-->
-								<div class="about-btn">
-									<a href="#contact"><button class="about-view packages-btn">
-											Book Now
-										</button></a>
-									<a href="khajuraho.html"><button class="about-view packages-btn">
-											Get Details
-										</button></a>
-								</div><!--/.about-btn-->
-							</div><!--/.single-package-item-txt-->
-						</div><!--/.single-package-item-->
-					</div><!--/.col-->
-
-					<div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="500">
-						<div class="single-package-item">
-							<img src="assets/images/packages/p4.jpg" alt="Golden Triangle with Mumbai and Goa">
-							<div class="single-package-item-txt">
-								<h3>GOLDEN TRIANGLE WITH MUMBAI AND GOA<span class="pull-right"></span></h3>
-								<div class="packages-para">
-									<p>
-										<span>
-											<i class="fa fa-angle-right"></i> 11 days 10 nights
-										</span>
-									</p>
-								</div><!--/.packages-para-->
-								<div class="packages-review">
-									<p>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<span>1635 reviews</span>
-									</p>
-								</div><!--/.packages-review-->
-								<div class="about-btn">
-									<a href="#contact"><button class="about-view packages-btn">
-											Book Now
-										</button></a>
-									<a href="mumbai.html"><button class="about-view packages-btn">
-											Get Details
-										</button></a>
-								</div><!--/.about-btn-->
-							</div><!--/.single-package-item-txt-->
-						</div><!--/.single-package-item-->
-					</div><!--/.col-->
-
-					<div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
-						<div class="single-package-item">
-							<img src="https://rctrips.com/assets/dubai-thumb-museum3.jpg" alt="Dubai Tour Package">
-							<div class="single-package-item-txt">
-								<h3>Dubai<span class="pull-right"></span></h3>
-								<div class="packages-para">
-									<p>
-										<span>
-											<i class="fa fa-angle-right"></i> 5 days 4 nights
-										</span>
-									</p>
-								</div><!--/.packages-para-->
-								<div class="packages-review">
-									<p>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<span>3568 reviews</span>
-									</p>
-								</div><!--/.packages-review-->
-								<div class="about-btn">
-									<a href="#contact"><button class="about-view packages-btn">
-											Book Now
-										</button></a>
-									<a href="dubai.html"><button class="about-view packages-btn">
-											Get Details
-										</button></a>
-								</div><!--/.about-btn-->
-							</div><!--/.single-package-item-txt-->
-						</div><!--/.single-package-item-->
-					</div><!--/.col-->
-
-					<div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="400">
-						<div class="single-package-item">
-							<img src="https://rctrips.com/assets/greece-thumb-1.jpg" alt="Greece Tour Package">
-							<div class="single-package-item-txt">
-								<h3>Greece<span class="pull-right"></span></h3>
-								<div class="packages-para">
-									<p>
-										<span>
-											<i class="fa fa-angle-right"></i> 7 days 4 nights
-										</span>
-									</p>
-								</div><!--/.packages-para-->
-								<div class="packages-review">
-									<p>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<span>2807 reviews</span>
-									</p>
-								</div><!--/.packages-review-->
-								<div class="about-btn">
-									<a href="#contact"><button class="about-view packages-btn">
-											Book Now
-										</button></a>
-									<a href="greece.html"><button class="about-view packages-btn">
-											Get Details
-										</button></a>
-								</div><!--/.about-btn-->
-							</div><!--/.single-package-item-txt-->
-						</div><!--/.single-package-item-->
-					</div><!--/.col-->
-
-					<div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="600">
-						<div class="single-package-item">
-							<img src="https://rctrips.com/assets/hagia-sofia-thumb.jpg" alt="Turkey Tour Package">
-							<div class="single-package-item-txt">
-								<h3>Turkey<span class="pull-right"></span></h3>
-								<div class="packages-para">
-									<p>
-										<span>
-											<i class="fa fa-angle-right"></i> 5 days 4 nights
-										</span>
-									</p>
-								</div><!--/.packages-para-->
-								<div class="packages-review">
-									<p>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<span>1924 reviews</span>
-									</p>
-								</div><!--/.packages-review-->
-								<div class="about-btn">
-									<a href="#contact"><button class="about-view packages-btn">
-											Book Now
-										</button></a>
-									<a href="turkey.html"><button class="about-view packages-btn">
-											Get Details
-										</button></a>
-								</div><!--/.about-btn-->
-							</div><!--/.single-package-item-txt-->
-						</div><!--/.single-package-item-->
-					</div><!--/.col-->
-				</div><!--/.row-->
-			</div><!--/.packages-content-->
-		</div><!--/.container-->
-	</section><!--/.packages-->
-	<!--packages end-->
-
-
-	<!--special-offer start-->
-	<section id="spo" class="special-offer parallax">
-		<div class="container">
-			<div class="special-offer-content">
-				<div class="row">
-					<div class="col-sm-8" data-aos="fade-right" data-aos-delay="200">
-						<div class="single-special-offer">
-							<div class="single-special-offer-txt">
-								<h2>Thailand</h2>
-								<div class="packages-review special-offer-review">
-									<p>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<span>2544 reviews</span>
-									</p>
-								</div><!--/.packages-review-->
-								<div class="packages-para special-offer-para">
-									<p>
-										<span>
-											<i class="fa fa-angle-right"></i> 5 days 6 nights
-										</span>
-										<span>
-											<i class="fa fa-angle-right"></i> 2 person
-										</span>
-										<span>
-											<i class="fa fa-angle-right"></i> 5 star accommodation
-										</span>
-									</p>
-									<p>
-										<span>
-											<i class="fa fa-angle-right"></i> transportation
-										</span>
-										<span>
-											<i class="fa fa-angle-right"></i> food facilities
-										</span>
-									</p>
-									<p class="offer-para">
-										Whether you're wandering through bustling markets, relaxing by crystal-clear
-										waters, or tasting delicious street food, this 5-day escape will leave you with
-										lasting memories.
-									</p>
-								</div><!--/.packages-para-->
-								<div class="offer-btn-group">
-									<div class="about-btn">
-										<a href="#contact"><button class="about-view packages-btn offfer-btn">
-												Make Tour
-											</button></a>
-									</div><!--/.about-btn-->
-									<div class="about-btn">
-										<a href="#contact"><button class="about-view packages-btn">
-												Get Details
-											</button></a>
-									</div><!--/.about-btn-->
-								</div><!--/.offer-btn-group-->
-							</div><!--/.single-special-offer-txt-->
-						</div><!--/.single-special-offer-->
-					</div><!--/.col-->
-					<div class="col-sm-4" data-aos="fade-left" data-aos-delay="400">
-						<div class="single-special-offer">
-							<div class="single-special-shape-txt">
-								<h3>Special Offer</h3>
-								<h4><span>40%</span><br>off</h4>
-							</div><!--/.single-special-shape-txt-->
-						</div><!--/.single-special-offer-->
-					</div><!--/.col-->
-				</div><!--/.row-->
-			</div><!--/.special-offer-content-->
-		</div><!--/.container-->
-	</section><!--/.special-offer end-->
-	<!--special-offer end-->
-
-	<!--<div id="contact"><hr><hr><hr><div>-->
-
-	<!-- Success/Error Messages -->
-	<div id="thank-you" class="my-5" style="display: none;">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-8">
-					<div class="alert alert-success text-center p-4">
-						<h3><i class="fa fa-check-circle me-2"></i>Thank You!</h3>
-						<p class="mb-0">Your message has been sent successfully. We'll get back to you soon!</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="error-message" class="my-5" style="display: none;">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-8">
-					<div class="alert alert-danger text-center p-4">
-						<h3><i class="fa fa-exclamation-circle me-2"></i>Oops!</h3>
-						<p class="mb-0">There was a problem sending your message. Please try again or contact us directly.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<section id="contact" class="contact-section py-5">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-8">
-					<div class="contact-form" data-aos="fade-up">
-						<h2 class="text-center mb-4">Travel Information</h2>
-						<form action="send_mail.php" method="POST" class="row g-3">
-							<div class="col-md-6">
-								<label for="name" class="form-label">Name</label>
-								<input type="text" id="name" name="name" class="form-control" required>
-							</div>
-
-							<div class="col-md-6">
-								<label for="phone" class="form-label">Phone</label>
-								<input type="tel" id="phone" name="phone" class="form-control" required>
-							</div>
-
-							<div class="col-md-12">
-								<label for="email" class="form-label">Email</label>
-								<input type="email" id="email" name="email" class="form-control" required>
-							</div>
-
-							<div class="col-md-6">
-								<label for="from" class="form-label">From</label>
-								<input type="text" id="from" name="from" class="form-control" required>
-							</div>
-
-							<div class="col-md-6">
-								<label for="to" class="form-label">To</label>
-								<input type="text" id="to" name="to" class="form-control" required>
-							</div>
-
-							<div class="col-md-6">
-								<label for="arrival-date" class="form-label">Arrival Date</label>
-								<input type="date" id="arrival-date" name="arrival-date" class="form-control" required>
-							</div>
-
-							<div class="col-md-6">
-								<label for="duration" class="form-label">Duration</label>
-								<input type="text" id="duration" name="duration" class="form-control" required>
-							</div>
-
-							<div class="col-md-6">
-								<label for="people" class="form-label">Number of People</label>
-								<input type="number" id="people" name="people" class="form-control" required>
-							</div>
-
-							<div class="col-12 mt-4">
-								<button type="submit" class="about-view w-100">Submit Request</button>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-	<!-- footer-copyright start -->
-	<footer class="footer-copyright">
-		<div class="container">
-			<div class="footer-content">
-				<div class="row">
-					<div class="col-sm-3" data-aos="fade-up" data-aos-delay="100">
-						<div class="single-footer-item">
-							<div class="footer-logo">
-								<a href="index.html">
-									SKY<span>WINGS</span>
-								</a>
-								<p>
-									Your premium travel partner
-								</p>
-							</div>
-						</div><!--/.single-footer-item-->
-					</div><!--/.col-->
-
-					<div class="col-sm-3" data-aos="fade-up" data-aos-delay="200">
-						<div class="single-footer-item">
-							<h2>quick links</h2>
-							<div class="single-footer-txt">
-								<p><a href="#home">home</a></p>
-								<p><a href="#gallery">about</a></p>
-								<p><a href="#pack">packages</a></p>
-								<p><a href="#spo">special offers</a></p>
-								<p><a href="#contact">contact us</a></p>
-								<p><a href="terms.html">terms & conditions</a></p>
-							</div><!--/.single-footer-txt-->
-						</div><!--/.single-footer-item-->
-					</div><!--/.col-->
-
-					<div class="col-sm-3" data-aos="fade-up" data-aos-delay="300">
-						<div class="single-footer-item">
-							<h2>popular destinations</h2>
-							<div class="single-footer-txt">
-								<p><a href="mumbai.html">Mumbai</a></p>
-								<p><a href="rajasthan.html">Rajasthan</a></p>
-								<p><a href="khajuraho.html">Khajuraho</a></p>
-								<p><a href="dubai.html">Dubai</a></p>
-								<p><a href="greece.html">Greece</a></p>
-								<p><a href="turkey.html">Turkey</a></p>
-							</div><!--/.single-footer-txt-->
-						</div><!--/.single-footer-item-->
-					</div><!--/.col-->
-
-					<div class="col-sm-3" data-aos="fade-up" data-aos-delay="400">
-						<div class="single-footer-item text-center">
-							<h2 class="text-left">contact info</h2>
-							<div class="single-footer-txt text-left">
-								<p><a href="tel:+918307711355"><i class="fa fa-phone me-2"></i>+91 8307711355</a></p>
-								<p class="foot-email"><a href="mailto:info@skywings.com"><i
-											class="fa fa-envelope me-2"></i>info@skywings.com</a></p>
-								<p><i class="fa fa-map-marker-alt me-2"></i>53, Niti Bagh, Tajganj<br>Agra 282001
-									(INDIA)</p>
-							</div><!--/.single-footer-txt-->
-						</div><!--/.single-footer-item-->
-					</div><!--/.col-->
-				</div><!--/.row-->
-			</div><!--/.footer-content-->
-
-			<div class="text-center pb-4">
-				<p>&copy; 2024 <a href="#">Sky Wings</a>. All Rights Reserved.</p>
-				<hr>
-				<div class="social-icons mt-4">
-					<a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
-					<a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
-					<a href="#" class="me-3"><i class="fab fa-linkedin-in"></i></a>
-					<a href="#" class="me-3"><i class="fab fa-whatsapp"></i></a>
-				</div>
-			</div>
-		</div><!--/.container-->
-	</footer><!-- /.footer-copyright-->
-	<!-- footer-copyright end -->
-
-
-
-
-	<!-- JavaScript Libraries -->
-	<!-- jQuery is already loaded in the head section -->
-
-	<!-- Bootstrap JS -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-	<!-- AOS Animation -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-
-	<!-- Swiper JS -->
-	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
-	<!--modernizr.min.js-->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-
-	<!--bootstrap.min.js-->
-	<script src="assets/js/bootstrap.min.js"></script>
-
-	<!-- jquery.filterizr.min.js -->
-	<script src="assets/js/jquery.filterizr.min.js"></script>
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-
-	<!--jquery-ui.min.js-->
-	<script src="assets/js/jquery-ui.min.js"></script>
-
-	<!-- counter js -->
-	<script src="assets/js/jquery.counterup.min.js"></script>
-	<script src="assets/js/waypoints.min.js"></script>
-
-	<!--owl.carousel.js-->
-	<script src="assets/js/owl.carousel.min.js"></script>
-
-	<!-- jquery.sticky.js -->
-	<script src="assets/js/jquery.sticky.js"></script>
-
-	<!--datepicker.js-->
-	<script src="assets/js/datepicker.js"></script>
-
-	<!-- bootsnav js -->
-	<script src="assets/js/bootsnav.js"></script>
-
-	<!--Custom JS-->
-	<script src="assets/js/custom.js"></script>
-
-	<!-- Main Custom JS - This must be loaded last -->
-	<script src="assets/js/main.js"></script>
-
-	<!-- Form submission feedback script -->
-	<script>
-		// Function to get URL parameters
-		function getUrlParameter(name) {
-			name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
-			var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
-			var results = regex.exec(location.search);
-			return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
-		}
-
-		// Check for status parameter
-		document.addEventListener('DOMContentLoaded', function() {
-			var status = getUrlParameter('status');
-			if (status === 'success') {
-				document.getElementById('thank-you').style.display = 'block';
-				// Scroll to thank you message
-				document.getElementById('thank-you').scrollIntoView({ behavior: 'smooth' });
-				// Hide the message after 5 seconds
-				setTimeout(function() {
-					document.getElementById('thank-you').style.display = 'none';
-				}, 5000);
-			} else if (status === 'error') {
-				document.getElementById('error-message').style.display = 'block';
-				// Scroll to error message
-				document.getElementById('error-message').scrollIntoView({ behavior: 'smooth' });
-				// Hide the message after 5 seconds
-				setTimeout(function() {
-					document.getElementById('error-message').style.display = 'none';
-				}, 5000);
-			}
-		});
-	</script>
-
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="logo-text">Sky<span class="text-accent">Wings</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#hero">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#destinations">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#why-choose-us">Why Choose Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold">Discover the World with SkyWings</h1>
+                    <p class="lead mb-4">Your gateway to affordable and unforgettable journeys! Explore the beauty of America and beyond with the best flight deals.</p>
+                    <a href="#search-form" class="btn btn-primary btn-lg">Find Your Flight</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search Form Section -->
+    <section id="search-form" class="py-5">
+        <div class="container">
+            <div class="search-container">
+                <h2 class="text-center mb-4">Find Your Perfect Trip</h2>
+                <form class="row g-3">
+                    <div class="col-md-3">
+                        <label for="departure" class="form-label">From</label>
+                        <select class="form-select" id="departure" required>
+                            <option selected disabled value="">Choose departure...</option>
+                            <option>New York</option>
+                            <option>Los Angeles</option>
+                            <option>Chicago</option>
+                            <option>Miami</option>
+                            <option>Las Vegas</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="destination" class="form-label">To</label>
+                        <select class="form-select" id="destination" required>
+                            <option selected disabled value="">Choose destination...</option>
+                            <option>San Diego</option>
+                            <option>Atlanta</option>
+                            <option>Edmonton</option>
+                            <option>Ponce</option>
+                            <option>San Juan</option>
+                            <option>Mexico City</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="departure-date" class="form-label">Departure</label>
+                        <input type="date" class="form-control" id="departure-date" required>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="return-date" class="form-label">Return</label>
+                        <input type="date" class="form-control" id="return-date">
+                    </div>
+                    <div class="col-md-2 d-flex align-items-end">
+                        <button type="submit" class="btn btn-primary w-100">Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Flight Offers Section -->
+    <section id="top-offers" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">TOP FLIGHT OFFERS</h2>
+            <p class="text-center mb-5">Explore the Heart of America's Beauty.</p>
+            <div class="offer-description mb-5">
+                <p>Discover unbeatable travel deals with SkyWings! Your next adventure awaits, and we have the best affordable flight options to transport you to your dream destinations. Whether you crave the vibrant energy of New York City, the exotic allure of the Philippines, or the captivating charm of Sydney, SkyWings has a diverse array of budget-friendly flights departing from the United States to major airports worldwide. With strategic partnerships with over 500 airlines, we bring you the most competitive prices and exclusive offers. Say yes to seamless travel planning, incredible destinations, and unbeatable savings with SkyWings – your gateway to affordable and unforgettable journeys!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Domestic Flights Section -->
+    <section id="destinations" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-2">Domestic Flights</h2>
+            <div class="row g-4 mt-3">
+                <div class="col-md-4">
+                    <div class="destination-card">
+                        <div class="destination-img">
+                            <img src="images/las-vegas-san-diego.jpg" alt="Las Vegas - San Diego" class="img-fluid">
+                            <div class="airline-logo">F</div>
+                        </div>
+                        <div class="destination-info">
+                            <h5>Las Vegas - San Diego</h5>
+                            <p class="price">From US$48.06</p>
+                            <a href="destinations/las-vegas-san-diego.html" class="btn btn-sm btn-outline-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="destination-card">
+                        <div class="destination-img">
+                            <img src="images/fort-lauderdale-atlanta.jpg" alt="Fort Lauderdale - Atlanta" class="img-fluid">
+                            <div class="airline-logo">S</div>
+                        </div>
+                        <div class="destination-info">
+                            <h5>Fort Lauderdale - Atlanta</h5>
+                            <p class="price">From US$56.18</p>
+                            <a href="destinations/fort-lauderdale-atlanta.html" class="btn btn-sm btn-outline-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="destination-card">
+                        <div class="destination-img">
+                            <img src="images/abbotsford-edmonton.jpg" alt="Abbotsford - Edmonton" class="img-fluid">
+                            <div class="airline-logo">F</div>
+                        </div>
+                        <div class="destination-info">
+                            <h5>Abbotsford - Edmonton</h5>
+                            <p class="price">From US$93.74</p>
+                            <a href="destinations/abbotsford-edmonton.html" class="btn btn-sm btn-outline-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- International Flights Section -->
+    <section id="international-flights" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-2">International Flights</h2>
+            <div class="row g-4 mt-3">
+                <div class="col-md-4">
+                    <div class="destination-card">
+                        <div class="destination-img">
+                            <img src="images/orlando-ponce.jpg" alt="Orlando - Ponce" class="img-fluid">
+                            <div class="airline-logo">F</div>
+                        </div>
+                        <div class="destination-info">
+                            <h5>Orlando - Ponce</h5>
+                            <p class="price">From US$102.06</p>
+                            <a href="destinations/orlando-ponce.html" class="btn btn-sm btn-outline-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="destination-card">
+                        <div class="destination-img">
+                            <img src="images/orlando-san-juan.jpg" alt="Orlando - San Juan" class="img-fluid">
+                            <div class="airline-logo">S</div>
+                        </div>
+                        <div class="destination-info">
+                            <h5>Orlando - San Juan</h5>
+                            <p class="price">From US$167.06</p>
+                            <a href="destinations/orlando-san-juan.html" class="btn btn-sm btn-outline-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="destination-card">
+                        <div class="destination-img">
+                            <img src="images/houston-mexico-city.jpg" alt="Houston - Mexico City" class="img-fluid">
+                            <div class="airline-logo">F</div>
+                        </div>
+                        <div class="destination-info">
+                            <h5>Houston - Mexico City</h5>
+                            <p class="price">From US$235.06</p>
+                            <a href="destinations/houston-mexico-city.html" class="btn btn-sm btn-outline-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Our Services</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="service-card text-center">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <h4>Flight Booking</h4>
+                        <p>Book domestic and international flights at the most competitive prices with our easy-to-use booking system.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card text-center">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-hotel"></i>
+                        </div>
+                        <h4>Hotel Reservations</h4>
+                        <p>Find the perfect accommodation from our selection of partner hotels worldwide at special rates.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card text-center">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-suitcase"></i>
+                        </div>
+                        <h4>Vacation Packages</h4>
+                        <p>Save time and money with our all-inclusive vacation packages designed for every budget.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card text-center">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <h4>Car Rentals</h4>
+                        <p>Rent a car at your destination with our global network of reliable car rental partners.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card text-center">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <h4>Guided Tours</h4>
+                        <p>Explore destinations with expert local guides and discover hidden gems with our curated tours.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card text-center">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h4>24/7 Customer Support</h4>
+                        <p>Our dedicated support team is available around the clock to assist with any travel needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-choose-us" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Why Choose SkyWings</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="why-choose-img">
+                        <img src="images/why-choose-us.jpg" alt="Why Choose SkyWings" class="img-fluid rounded">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="why-choose-content">
+                        <div class="feature d-flex flex-column flex-sm-row text-center text-sm-start mb-4">
+                            <div class="feature-icon me-sm-3 mb-2 mb-sm-0">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Best Price Guarantee</h4>
+                                <p>We promise to offer the best rates on flights, hotels, and packages. If you find a better price elsewhere, we'll match it.</p>
+                            </div>
+                        </div>
+                        <div class="feature d-flex flex-column flex-sm-row text-center text-sm-start mb-4">
+                            <div class="feature-icon me-sm-3 mb-2 mb-sm-0">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Global Network</h4>
+                                <p>With partnerships with over 500 airlines worldwide, we offer flights to countless destinations across the globe.</p>
+                            </div>
+                        </div>
+                        <div class="feature d-flex flex-column flex-sm-row text-center text-sm-start mb-4">
+                            <div class="feature-icon me-sm-3 mb-2 mb-sm-0">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Secure Booking</h4>
+                                <p>Book with confidence through our secure payment system, ensuring your personal information is protected.</p>
+                            </div>
+                        </div>
+                        <div class="feature d-flex flex-column flex-sm-row text-center text-sm-start">
+                            <div class="feature-icon me-sm-3 mb-2 mb-sm-0">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>IATA Accredited</h4>
+                                <p>As a certified IATA member, we adhere to the highest industry standards to provide reliable travel services.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contact-info mb-4 mb-md-0">
+                        <h4>Get in Touch</h4>
+                        <p>Have questions about your booking or need assistance planning your next trip? Our travel experts are here to help.</p>
+                        <div class="contact-item d-flex flex-column flex-sm-row text-center text-sm-start mb-3">
+                            <div class="icon me-sm-3 mb-2 mb-sm-0">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="text">
+                                <p>123 Airport Boulevard, San Francisco, CA 94128, USA</p>
+                            </div>
+                        </div>
+                        <div class="contact-item d-flex flex-column flex-sm-row text-center text-sm-start mb-3">
+                            <div class="icon me-sm-3 mb-2 mb-sm-0">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="text">
+                                <p>+1 (800) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item d-flex flex-column flex-sm-row text-center text-sm-start mb-3">
+                            <div class="icon me-sm-3 mb-2 mb-sm-0">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="text">
+                                <p>info@skywings.com</p>
+                            </div>
+                        </div>
+                        <div class="social-links mt-4 text-center text-sm-start">
+                            <a href="#" class="me-2"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="me-2"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="me-2"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="contact-form">
+                        <form>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Subject">
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-about">
+                        <h5 class="footer-heading">About SkyWings</h5>
+                        <p>SkyWings is a leading travel agency in the USA, specializing in affordable flights, hotels, and vacation packages. We make travel planning simple, convenient, and budget-friendly.</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h5 class="footer-heading">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h5 class="footer-heading">Travel Info</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Travel Insurance</a></li>
+                        <li><a href="#">Travel Guides</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Travel Tips</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="footer-heading">Newsletter</h5>
+                    <p>Subscribe to our newsletter for exclusive deals and travel tips.</p>
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="mt-4 mb-3">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="copyright mb-0">&copy; 2023 SkyWings. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms & Conditions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
-
-</html>
+</html> 
