@@ -403,4 +403,127 @@ footer {
     .search-container {
         padding: 20px 15px;
     }
+}
+
+/* Package Cards Styles */
+.package-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.package-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.package-img {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.package-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.package-card:hover .package-img img {
+    transform: scale(1.1);
+}
+
+.package-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    z-index: 1;
+}
+
+.package-info {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.package-info h4 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: var(--dark-color);
+}
+
+.package-description {
+    color: var(--text-color);
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+.package-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.package-features li {
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+.package-features i {
+    color: var(--accent-color);
+}
+
+.package-price {
+    margin-top: auto;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.package-price .price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent-color);
+}
+
+.package-price .per-person {
+    font-size: 0.8rem;
+    color: var(--text-color);
+    display: block;
+    margin-top: 5px;
+}
+
+#flight-packages, #travel-packages {
+    position: relative;
+}
+
+#flight-packages::before, #travel-packages::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/pattern-bg.png');
+    background-repeat: repeat;
+    opacity: 0.05;
+    z-index: 0;
+}
+
+#flight-packages .container, #travel-packages .container {
+    position: relative;
+    z-index: 1;
 } 

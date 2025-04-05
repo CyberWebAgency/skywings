@@ -117,6 +117,102 @@
     font-weight: 600;
 }
 
+/* Package Info Card Styles */
+.package-info-card {
+    background-color: var(--white-color);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.package-highlights .package-icon {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(139, 0, 0, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.package-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.package-features {
+    margin-top: 20px;
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+}
+
+.feature-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.feature-list i {
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+/* Timeline Styles */
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 30px;
+    height: 100%;
+    width: 2px;
+    background-color: var(--primary-color);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 60px;
+}
+
+.timeline-day {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    z-index: 1;
+}
+
+.timeline-content {
+    background-color: var(--white-color);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.timeline-content h4 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
 /* Destination Info Styles */
 .highlight-list ul {
     list-style: none;
@@ -236,6 +332,20 @@
     .tip-card {
         margin-bottom: 20px;
     }
+    
+    .timeline::before {
+        left: 20px;
+    }
+    
+    .timeline-item {
+        padding-left: 50px;
+    }
+    
+    .timeline-day {
+        width: 40px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
 }
 
 @media (max-width: 575px) {
@@ -253,5 +363,13 @@
 
     .airport-name {
         font-size: 0.8rem;
+    }
+    
+    .package-info-card {
+        padding: 20px;
+    }
+    
+    .timeline-content {
+        padding: 15px;
     }
 } 
