@@ -337,9 +337,17 @@ footer {
     margin-top: 15px;
 }
 
+.footer-bottom-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+
 .footer-bottom-links a {
-    color: #ddd;
-    margin-left: 20px;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
 }
 
 .footer-bottom-links a:hover {
@@ -392,6 +400,30 @@ footer {
     
     .contact-item .icon {
         margin: 0 auto 15px;
+    }
+
+    .footer-bottom-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .footer-bottom-links a {
+        display: block;
+        padding: 0.5rem 0;
+    }
+
+    .footer .row > div {
+        margin-bottom: 2rem;
+    }
+
+    .footer .row > div:last-child {
+        margin-bottom: 0;
+    }
+
+    .footer .text-md-end {
+        text-align: center !important;
     }
 }
 
@@ -526,4 +558,203 @@ footer {
 #flight-packages .container, #travel-packages .container {
     position: relative;
     z-index: 1;
+}
+
+/* Policy Pages Styles */
+.policy-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/atlanta-3.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    margin-top: 76px;
+}
+
+.policy-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.policy-header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.policy-card {
+    background-color: var(--white-color);
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.policy-card h2 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.policy-list {
+    list-style: none;
+    padding: 0;
+}
+
+.policy-list li {
+    margin-bottom: 15px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.policy-list li::before {
+    content: '•';
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+}
+
+.policy-note {
+    font-style: italic;
+    color: var(--light-text-color);
+}
+
+.policy-contact {
+    background-color: var(--light-bg-color);
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+.policy-contact h3 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-info i {
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+/* About Page Styles */
+.about-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/boston-washington.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    margin-top: 76px;
+}
+
+.about-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.about-header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.about-section {
+    background-color: var(--white-color);
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.feature-card {
+    background-color: var(--white-color);
+    border-radius: 10px;
+    padding: 25px;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.feature-card h4 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* Terms & Privacy Pages Styles */
+.terms-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/edmonton-2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    margin-top: 76px;
+}
+
+.terms-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.terms-header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.terms-section, .privacy-section {
+    background-color: var(--white-color);
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.terms-item, .privacy-item {
+    margin-bottom: 30px;
+}
+
+.terms-item h3, .privacy-item h3 {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.terms-item h4, .privacy-item h4 {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    margin: 20px 0 10px;
+    font-weight: 600;
+}
+
+.terms-item ul, .privacy-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.terms-item ul li, .privacy-item ul li {
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.terms-item ul li::before, .privacy-item ul li::before {
+    content: '•';
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
 } 
